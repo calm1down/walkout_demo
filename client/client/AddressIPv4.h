@@ -13,11 +13,11 @@ private:
 	//	获取sockaddr_in形式
 	sockaddr_in *GetAddrIn() { return reinterpret_cast<sockaddr_in*>(&_addr); }
 public:
-	AddressIPv4(uint32_t addr, uint16_t port)
+	AddressIPv4(uint32_t uAddr, uint16_t uPort)
 	{
 		GetAddrIn()->sin_family = AF_INET;
-		GetAddrIn()->sin_addr.S_un.S_addr = addr;
-		GetAddrIn()->sin_port = port;
+		GetAddrIn()->sin_addr.S_un.S_addr = uAddr;
+		GetAddrIn()->sin_port = uPort;
 	}
 
 	AddressIPv4(const sockaddr &other)
