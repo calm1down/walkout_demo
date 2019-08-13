@@ -18,9 +18,15 @@
     <ClInclude Include="network\main.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Address.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gamesrc\network\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Address.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
